@@ -1,0 +1,7 @@
+zone_id,zone_name,adjacent_zones
+Z1,Jayanagar,Z2;Z6
+Z2,JP Nagar,Z1;Z3
+Z3,Bannerghatta,Z2;Z4
+Z4,Electronic City,Z3;Z5
+Z5,HSR Layout,Z4;Z6
+Z6,Koramangala,Z1;Z5
