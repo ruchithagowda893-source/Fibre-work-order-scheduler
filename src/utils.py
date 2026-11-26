@@ -9,7 +9,7 @@ def read_csv_file(file_path):
     with open(file_path, "r", newline="", encoding="utf-8") as file:
         reader = csv.DictReader(file)
         return list(reader)
-    def split_values(value):
+def split_values(value):
     if not value:
         return []
 
