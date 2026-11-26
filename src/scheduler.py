@@ -241,7 +241,11 @@ class Scheduler:
                     "priority_bumps_after": order["priority_bumps"]
                 })
 
-        self.pending = remaining
+        future = [
+            order for order in self.pending
+            if order["requested_date"] > schedule_date
+]
+        self.pending = remaining + future
 
         print(f"\nSchedule for {schedule_date}")
         print(f"Assigned: {len(candidates) - len(remaining)}")
